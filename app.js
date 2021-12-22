@@ -33,14 +33,20 @@ window.addEventListener("mousemove", (e) => {
   });
 });
 
-window.addEventListener("mousedown", () => {
+const closeEyes = () => {
   eyes.forEach((eye) => {
     eye.style.height = `${EYE_HEIGHT * 0.2}px`;
   });
-});
+};
 
-window.addEventListener("mouseup", () => {
+const openEyes = () => {
   eyes.forEach((eye) => {
     eye.style.height = `${EYE_HEIGHT}px`;
   });
-});
+};
+
+window.addEventListener("mousedown", closeEyes);
+window.addEventListener("touchstart", closeEyes);
+
+window.addEventListener("mouseup", openEyes);
+window.addEventListener("touchend", openEyes);
