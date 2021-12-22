@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.center-both {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.face {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: peachpuff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eye {
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  transition: height 150ms linear;
+}
+
+.pupil {
+  border-radius: 12.5px;
+  background-color: black;
+  position: absolute;
+  left: calc(50% - 12.5px);
+}
