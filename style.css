@@ -10,15 +10,6 @@ body {
   justify-content: center;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .face {
   height: 200px;
   width: 200px;
